@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+ table {
+			 width:100%;
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        .middle {
+            margin: auto;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        h1 {
+            text-align: center;
+        }
