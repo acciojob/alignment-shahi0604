@@ -2,65 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
-	</head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .middle td {
+            border: 1px solid black;
+            padding: 1px;
+            height: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+            height: 25px !important;
+        }
+        .blue {
+            background-color: blue;
+            height: 25px !important;
+        }
+        #t-image {
+            text-align: center;
+        }
+        #t-image img {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
 <body>
 
     <h1>HTML Assignment #3</h1>
 
     <!-- Table 1 -->
-    <table class="middle" id="table-1">
+    <table id="table-1" class="middle">
         <tr>
-            <td id="t11">1</td>
-            <td id="t12">2</td>
-            <td id="t13" class="right">3</td>
-        </tr>
-        <tr class="center">
-            <td>4</td>
-            <td>5</td>
-            <td class="right">6</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td class="right">9</td>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
     </table>
-
-    <br>
 
     <!-- Table 2 -->
-    <table class="middle" id="table-2">
+    <table id="table-2" class="middle">
         <tr>
-            <td id="t21" colspan="6">Single Cell</td>
+            <td id="t21" colspan="6"></td>
         </tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3" rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
 
-    <br>
-
     <!-- Table 3 -->
-    <table class="middle" id="table-3">
+    <table id="table-3" class="middle">
         <tr class="green">
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colspan="3"></td>
         </tr>
         <tr>
-            <td></td>
-            <td id="t-image">
-                <img src="https://picsum.photos/200" alt="Random Image" >
+            <td style="width: 33%;"></td>
+            <td id="t-image" style="width: 34%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Steph_Curry_%2851915116957%29.jpg" alt="Michael Jordan" onerror="this.src='https://via.placeholder.com/250x150?text=Jordan+Dunk'">
             </td>
-            <td></td>
+            <td style="width: 33%;"></td>
         </tr>
         <tr class="blue">
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colspan="3"></td>
         </tr>
     </table>
 
